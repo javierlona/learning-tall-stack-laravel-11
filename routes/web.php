@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Counter;
+use App\Livewire\Form;
 
-Route::view('/form', 'livewire.dynamic-form');
-Route::view('/', 'layouts.app');
+Route::get('/counter', Counter::class);
+Route::get('/form', Form::class);
