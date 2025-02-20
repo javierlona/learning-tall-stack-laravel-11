@@ -11,3 +11,5 @@ Route::get('/greeting', function () {
 });
 
 Route::view('/', 'foo');
+Route::view('/liveaction', 'Liveaction');
+Route::view('/live2', 'livetwo');
