@@ -19,7 +19,7 @@
 
             <!-- Page Content -->
             <main>
-                @yield('content')
+                @yield('some-content')
             </main>
         </div>
     </body>

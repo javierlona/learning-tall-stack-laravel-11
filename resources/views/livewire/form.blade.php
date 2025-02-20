@@ -5,10 +5,10 @@
                 <div>
                     <input type="text" x-model="field.name" placeholder="Field Name" required />
                     <input type="text" x-model="field.value" placeholder="Field Value" required />
-                    <button type="button" x-on:click="fields.splice(index, 1)" wire:click.prevent="removeField(index)">Remove</button>
+                    <button type="button" wire:click.prevent="removeField(index)">Remove</button>
                 </div>
             </template>
-            <button type="button" x-on:click="fields.push({ name: '', value: '' })" wire:click.prevent="addField">Add Field</button>
+            <button type="button" wire:click.prevent="addField">Add Field</button>
         </div>
         <button type="submit">Submit</button>
     </form>
