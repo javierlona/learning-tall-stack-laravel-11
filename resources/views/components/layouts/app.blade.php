@@ -10,5 +10,6 @@
     </head>
     <body>
         {{ $slot }}
+        {{ $theApple }}
     </body>
 </html>
