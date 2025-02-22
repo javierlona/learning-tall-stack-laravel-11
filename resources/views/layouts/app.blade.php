@@ -19,6 +19,8 @@
 
             <!-- Page Content -->
             <main>
+                {{-- Rendered by resources/views/welcome.blade.php --}}
+                @yield('header')
                 {{-- Rendered by resources/views/livetwo.blade.php --}}
                 @yield('some-content')
                 {{-- Rendered by resources/views/foo.blade.php --}}
@@ -29,6 +31,8 @@
                 @section('sidebar')
                     <p>This is the master sidebar.</p>
                 @show
+
+                @yield('footer')
                
             </main>
         </div>

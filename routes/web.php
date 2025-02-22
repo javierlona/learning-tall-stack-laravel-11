@@ -13,3 +13,4 @@ Route::get('/greeting', function () {
 Route::view('/foo', 'foo');
 Route::view('/liveaction', 'Liveaction');
 Route::view('/live2', 'livetwo');
+Route::view('/welcome', 'welcome');
