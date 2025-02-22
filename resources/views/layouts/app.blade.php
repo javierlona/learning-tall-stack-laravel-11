@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>@yield('title')</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,7 +19,17 @@
 
             <!-- Page Content -->
             <main>
+                {{-- Rendered by resources/views/livetwo.blade.php --}}
                 @yield('some-content')
+                {{-- Rendered by resources/views/foo.blade.php --}}
+                @yield('content')
+            </br>
+                <h2>Heading Two</h2>
+
+                @section('sidebar')
+                    <p>This is the master sidebar.</p>
+                @show
+               
             </main>
         </div>
     </body>

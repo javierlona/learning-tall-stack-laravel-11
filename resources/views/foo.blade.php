@@ -1,7 +1,10 @@
 @extends('layouts.app')
+
+@section('title', 'Foo Page')
+
 @section('content')
     <div class="container">
-        <h1>Welcome to the Dynamic Form Page</h1>
-        <p>This is a placeholder for the dynamic form content.</p>
+        <h1>Welcome to the Foo Page</h1>
+        <p>This is a placeholder paragraph block.</p>
     </div>
 @endsection

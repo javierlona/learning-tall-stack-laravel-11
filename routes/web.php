@@ -10,6 +10,6 @@ Route::get('/greeting', function () {
   return 'Hello World';
 });
 
-Route::view('/', 'foo');
+Route::view('/foo', 'foo');
 Route::view('/liveaction', 'Liveaction');
 Route::view('/live2', 'livetwo');
