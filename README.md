@@ -1,3 +1,5 @@
+php artisan list
+
 composer global config bin-dir --absolute
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 source ~/.bashrc
